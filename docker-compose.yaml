@@ -1,0 +1,26 @@
+version: "3.8"
+
+networks:
+    tapera-mini-net:
+
+services:
+    pcbook-grpc:
+        container_name: pcbook-grpc
+        image: naray/pcbook:latest
+        ports:
+            - "8081:8081"
+        hostname: pcbook-grpc
+        networks:
+            - tapera-mini-net
+        command: -port 8081
+    pcbook-rest:
+        container_name: pcbook-rest
+        image: naray/pcbook:latest
+        depends_on:
+            - pcbook-grpc
+        ports:
+            - "8080:8080"
+        hostname: pcbook-rest
+        networks:
+            - tapera-mini-net
+        command: -port 8080 -type rest -endpoint pcbook-grpc:8081

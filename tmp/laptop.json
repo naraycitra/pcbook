@@ -1,0 +1,62 @@
+{
+ "id": "1f311755-d3b4-4ce0-ab0b-44f7452150d7",
+ "brand": "Apple",
+ "name": "Macbook Pro",
+ "cpu": {
+  "brand": "AMD",
+  "name": "Ryzen 3 PRO 3200GE",
+  "number_core": 6,
+  "number_thread": 9,
+  "min_ghz": 2.7663108559028062,
+  "max_ghz": 4.34159927034787
+ },
+ "ram": {
+  "value": "25",
+  "unit": "GIGABYTE"
+ },
+ "gpus": [
+  {
+   "brand": "AMD",
+   "name": "RX Vega-56",
+   "min_ghz": 1.0186078020417193,
+   "max_ghz": 1.0298211471227987,
+   "memory": {
+    "value": "2",
+    "unit": "GIGABYTE"
+   }
+  }
+ ],
+ "storages": [
+  {
+   "driver": "SSD",
+   "memory": {
+    "value": "1021",
+    "unit": "GIGABYTE"
+   }
+  },
+  {
+   "driver": "HDD",
+   "memory": {
+    "value": "6",
+    "unit": "TERABYTE"
+   }
+  }
+ ],
+ "screen": {
+  "size_inch": 13.223108,
+  "resolution": {
+   "width": 3397,
+   "height": 1911
+  },
+  "panel": "OLED",
+  "multitouch": false
+ },
+ "keyboard": {
+  "layout": "AZERTY",
+  "backlit": true
+ },
+ "weight_kg": 2.516622633588905,
+ "price_usd": 1818.7450271257517,
+ "release_year": 2017,
+ "update_at": "2020-05-20T04:00:35.209726366Z"
+}
